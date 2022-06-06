@@ -1,0 +1,54 @@
+.detail-bar {
+    width: 240px;
+    height: auto;
+}
+
+.upload-bukti {
+    border-style: dashed !important;
+}
+
+.unduh-pdf {
+    border-style: dashed !important;
+}
+
+.payment-jumbo {
+    background-color: #F1F3FF;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: -85px;
+    height: 150px;
+    width: auto;
+}
+
+.check {
+    font-size: 48px !important;
+}
+
+@media (min-width: 992px) {
+    /* .payment {
+        margin: 0px, 199px, 0px, 199px;
+    } */
+    .payment-detail {
+        width: 100%;
+        padding: 0px 199px 0px 199px;
+        margin-top: -60px;
+    }
+    .bank {
+        width: 690px;
+        height: auto;
+    }
+    .bill {
+        width: 405px;
+        height: auto;
+    }
+    .payment-content {
+        padding: 0px 199px 0px 199px;
+    }
+    .payment-nav {
+        width: 100%;
+        padding: 0px 199px 0px 199px;
+    }
+    .invoice {
+        width: 605px;
+    }
+}

@@ -1,0 +1,184 @@
+body {
+    background-color: #f4f5f7;
+}
+
+.loginform>img {
+    height: 34px;
+    width: 100px;
+}
+
+#container2 {
+    width: 100%;
+    height: 100vh;
+}
+
+#container2 button {
+    background-color: #0D28A6;
+    color: white;
+}
+
+#sidenav {
+    background-color: #0D28A6;
+    color: white;
+    height: 100vh;
+    font-size: 20;
+    display: block;
+}
+
+nav {
+    z-index: 10;
+}
+
+.navlist {
+    list-style: none;
+    position: relative;
+}
+
+.navlist li {
+    padding: 3.5px;
+    height: 70px;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.navlist li a i {
+    font-size: 24px;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+    padding-top: 18px;
+}
+
+#dashboard button {
+    border-color: #0D28A6;
+    color: #0D28A6;
+}
+
+#dashboard .burger {
+    margin-left: 118px;
+    color: black;
+}
+
+#dashboard {
+    width: 100%;
+}
+
+#navbar {
+    height: 70px !important;
+}
+
+#tableUser {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+}
+
+.menu h1 {
+    font-size: 14px;
+    margin-left: 24px;
+    margin-bottom: 30px;
+}
+
+.menu a {
+    font-size: 14px;
+    color: black;
+}
+
+.menu ul {
+    padding-left: 24px;
+    list-style: none;
+}
+
+#contentDashboard {
+    width: 100%;
+}
+
+.margin {
+    margin-left: 250px;
+}
+
+.hapus {
+    height: 48px;
+    width: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit {
+    height: 48px;
+    width: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    background-color: whitesmoke;
+    top: 70px;
+    z-index: 9;
+}
+
+.tableHead {
+    background-color: #CFD4ED;
+}
+
+#inputName {
+    width: 339px;
+}
+
+.formAdd {
+    width: 147px;
+}
+
+.addData {
+    background-color: white;
+}
+
+#navbar {
+    display: block;
+}
+
+#sidebar {
+    top: 70px;
+}
+
+.card-img-top {
+    width: 350;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    #container1 {
+        /* background-image: url("../image/dashboard/pict.png"); */
+        /* background-size: cover; */
+        height: 100vh;
+        width: auto;
+    }
+    #registerimg>img {
+        height: 100vh;
+        width: auto;
+    }
+    /* #logincontent {
+        height: 100vh;
+        width: auto;
+    } */
+    .loginform {
+        width: 600px;
+        height: auto;
+    }
+}

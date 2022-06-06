@@ -1,0 +1,38 @@
+.input-group span {
+    background-color: white;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form2 {
+    z-index: 100;
+}
+
+.detail-form2 {
+    z-index: 100;
+}
+
+.form1 span i {
+    color: #8A8A8A;
+}
+
+.form2 {
+    width: 210px;
+}
+
+.search-form-detail {
+    display: flex;
+}
+
+@media (min-width: 992px) {
+    .search-form {
+        padding: 0px 197px 0px 196px;
+        margin-top: -60px;
+    }
+    .search-form-detail {
+        padding: 0px 197px 0px 196px;
+        margin-top: -60px;
+    }
+}

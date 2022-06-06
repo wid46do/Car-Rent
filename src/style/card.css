@@ -1,0 +1,17 @@
+.icon p i {
+    margin-right: 8px;
+    color: #8A8A8A;
+}
+
+.card-cover {
+    padding: 16px 196px 0px 196px;
+}
+
+.card-img {
+    width: auto;
+    height: 200px;
+}
+
+.card-cover2 {
+    display: flex;
+}
