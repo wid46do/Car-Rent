@@ -3,7 +3,6 @@ import { render, fireEvent } from "@testing-library/react";
 import App from "../App";
 
 describe("pastikan ada Form Registrasi", () => {
-    //Testing should be here
     test("pastikan ada kolom email", () => {
         const component = render( < App / > );
         console.log(component, "method yang tersedia untuk testing");
