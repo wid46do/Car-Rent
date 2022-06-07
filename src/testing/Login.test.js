@@ -1,30 +1,23 @@
 import React from "react";
-import { render, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent} from "@testing-library/react";
+import Login from "../pages/Login";
 import App from "../App";
 
-describe("pastikan ada Form Registrasi", () => {
-    test("pastikan ada kolom email", () => {
-        const component = render( < App / > );
-        console.log(component, "method yang tersedia untuk testing");
-        const inputEmail = component.getByText("Email:");
-        expect(inputEmail).toBeInTheDocument();
+let getByTestId;
+
+beforeEach(() => {
+    const view = render(<Login/>)
+
+    getByTesrid = view.getByTestId;
+})
+
+describe("UI Test", ()=>{
+    test('Header render with correct text', () => {
+        const headerEl = screen.getByTestId('header')
+        expect(headerEl.textContent).toBe('Welcome, Admin BCR')
     })
-
-    {
-        /* test("validasi struktur email yang ditulis harus benar", () => {
-                const text = "test@gmail.com";
-                expect(validateInput(text)).toBe(true);
-            })
-
-            test("validasi struktur email yang salah", () => {
-                const text = "testgmail.com";
-                expect(validateInput(text)).toBe(false);
-            })  */
-    }
-
-    test("pastikan ada label password", () => {
-        const component = render( < App / > );
-        const inputPassword = component.getByText("Password:");
-        expect(inputPassword).toBeInTheDocument();
+    test('Button render with correct label', () => {
+        const loginEl = screen.getByTestId('login-test')
+        expect(loginEl.textContent).toBe('Sign In')
     })
 })

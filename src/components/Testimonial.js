@@ -43,8 +43,6 @@ export default function Testimonial(){
                         </div>
                     </div>
                 </SwiperSlide>
-                {/* <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide> */}
             </Swiper>
         </section>
     );

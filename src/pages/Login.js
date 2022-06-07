@@ -74,7 +74,7 @@ export default function Login(props){
           <div id="container2" className="d-flex flex-column justify-content-center px-5">
             <div className="loginform d-flex flex-column justify-content-center">
               <img src={Logo} alt="" srcSet=""/>
-              <h1 className="my-4 fw-bold fs-5">Welcome, Admin BCR</h1>
+              <h1 data-testId="header" className="my-4 fw-bold fs-5">Welcome, Admin BCR</h1>
               <Form onSubmit={handleLogin} ref={form}>
                 <div className="mb-3">
                   <label for="exampleInputEmail1" className="form-label">Email</label>
@@ -101,7 +101,7 @@ export default function Login(props){
                 </div>
 
                 <LoginGoogle/>
-                <button id="login" type="submit" className="btn col-12">Sign In</button>
+                <button data-testId="login-test" id="login" type="submit" className="btn col-12">Sign In</button>
                 {message && (
                   <div className="form-group">
                     <div className="alert alert-danger" role="alert">

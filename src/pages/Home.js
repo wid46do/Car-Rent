@@ -17,13 +17,15 @@ import { PieChart } from "../components/PieChart";
 export default function Home(){
     const { user: currentUser } = useSelector((state) => state.auth);
 
+    const [chartData, setChartData] = useState({});
+
     useEffect(() => {
         const fetchPrices = async () => {
           const res = await fetch("https://rent-cars-api.herokuapp.com/admin/car");
           const data = await res.json();
-          console.log(data, "ini chart");
+          console.log("ini chart");
           const filterData = data.slice(0, 4)
-          console.log(filterData);
+          console.log(filterData, "filter");
           const filterName = filterData.map((car) => car.name)
         //   let withDriver, withoutDriver = 0;
         //   data.forEach((car)=>{
@@ -51,7 +53,7 @@ export default function Home(){
               {
                 label: "car status",
                 // data: [withDriver, withoutDriver],
-                data: filterResult,
+                data: [2, 3, 2, 1],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -71,8 +73,6 @@ export default function Home(){
         };
         fetchPrices();
       }, []);
-
-      const [chartData, setChartData] = useState({});
 
     const alertLogin = () => {
         Swal.fire({
@@ -106,7 +106,7 @@ export default function Home(){
                 <Services/>
                 <WhyUs/>
                 <PieChart 
-                    chartData={chartData} 
+                    chartData={chartData}
                 />
                 <Testimonial/>
                 <section id="#" className="mx-3 mx-md-3 mx-lg-0">
