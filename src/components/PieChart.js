@@ -34,8 +34,8 @@ export const data = {
   ],
 };
 
-export function PieChart(chartData) {
-  console.log(chartData);
+export function PieChart() {
+  // console.log(chartData);
   return (
     <div className=''>
       <div className='mt-5 mb-4'>
@@ -43,7 +43,8 @@ export function PieChart(chartData) {
       </div>
       <div className="pie">
         <Pie 
-          data={chartData.chartData}
+          // data={chartData.chartData}
+          data={data}
           width={100}
           options={{
             maintainAspectRatio: false,

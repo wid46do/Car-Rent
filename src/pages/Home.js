@@ -106,7 +106,7 @@ export default function Home(){
                 <Services/>
                 <WhyUs/>
                 <PieChart 
-                    chartData={chartData}
+                    // chartData={chartData}
                 />
                 <Testimonial/>
                 <section id="#" className="mx-3 mx-md-3 mx-lg-0">

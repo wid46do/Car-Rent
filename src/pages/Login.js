@@ -77,7 +77,7 @@ export default function Login(props){
               <h1 data-testId="header" className="my-4 fw-bold fs-5">Welcome, Admin BCR</h1>
               <Form onSubmit={handleLogin} ref={form}>
                 <div className="mb-3">
-                  <label for="exampleInputEmail1" className="form-label">Email</label>
+                  <label data-testId="email" for="exampleInputEmail1" className="form-label">Email</label>
                   <Input 
                     type="text" 
                     className="form-control mb-3"  
@@ -89,7 +89,7 @@ export default function Login(props){
                 </div>
 
                 <div className="mb-5">
-                  <label for="exampleInputPassword1" className="form-label">Password</label>
+                  <label data-testId="password" for="exampleInputPassword1" className="form-label">Password</label>
                   <Input 
                     type="password" 
                     className="form-control mb-3"  
