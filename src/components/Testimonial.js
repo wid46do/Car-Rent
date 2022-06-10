@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/home.css';
 import "swiper/css";
 import "swiper/css/navigation";
+// import 'swiper/swiper-bundle.min.css'
 import "../style/swiper.css";
 import CarouselImg from "../image/landing/img_photo.png";
 import CarouselImg2 from "../image/landing/img_photo2.png";

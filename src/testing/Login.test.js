@@ -1,17 +1,16 @@
 import React from "react";
-import { render, screen, fireEvent} from "@testing-library/react";
-import Login from "../pages/Login";
+import { render, screen, fireEvent } from "@testing-library/react";
 import App from "../App";
 
 let getByTestId;
 
 beforeEach(() => {
-    const view = render(<App/>)
+    const view = render( < App / > )
 
     getByTestId = view.getByTestId;
 })
 
-describe("UI Test", ()=>{
+describe("UI Test", () => {
     test('Header render with correct text', () => {
         const headerEl = screen.getByTestId('header')
         expect(headerEl.textContent).toBe('Welcome, Admin BCR')

@@ -101,7 +101,7 @@ export default function Login(props){
                 </div>
 
                 <LoginGoogle/>
-                <button data-testId="login-test" id="login" type="submit" className="btn col-12">Sign In</button>
+                <button data-testid="login-test" id="login" type="submit" className="btn col-12">Sign In</button>
                 {message && (
                   <div className="form-group">
                     <div className="alert alert-danger" role="alert">
