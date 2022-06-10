@@ -1,13 +1,14 @@
 import React from "react";
 import { render, screen, fireEvent} from "@testing-library/react";
 import Login from "../pages/Login";
+import App from "../App";
 
 let getByTestId;
 
 beforeEach(() => {
-    const view = render(<Login/>)
+    const view = render(<App/>)
 
-    getByTesrid = view.getByTestId;
+    getByTestId = view.getByTestId;
 })
 
 describe("UI Test", ()=>{

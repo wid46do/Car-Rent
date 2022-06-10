@@ -11,8 +11,8 @@ export default function Services(){
                 <img src={ImgService} alt="" srcSet=""/>
             </div>
             <div id="container-content2" className="mx-3 mx-md-3 mx-lg-0">
-                <h1 className="mb-4 mt-3 mt-md-3 mt-lg-0 text-center text-md-center text-lg-start">Best Car Rental for any kind of trip in (Lokasimu)!</h1>
-                <p className="mb-3 text-center text-md-center text-lg-start">Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
+                <h1 data-testid="header" className="mb-4 mt-3 mt-md-3 mt-lg-0 text-center text-md-center text-lg-start">Best Car Rental for any kind of trip in (Lokasimu)!</h1>
+                <p data-testid="desc" className="mb-3 text-center text-md-center text-lg-start">Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
                 <ul>
                     <li>
                         <div className="me-3">

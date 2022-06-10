@@ -21,7 +21,7 @@ export default function BankDetail(){
                             <div className="bank mb-4 mb-md-4 mb-lg-0 mx-3 mx-md-3 mx-lg-0 p-4 rounded-3 shadow bg-light">
                                 <div className="d-flex justify-content-between">
                                     <div>
-                                        <p className="fw-bold">Selesaikan Pembayaran Sebelum</p>
+                                        <p data-testid="dl-header" className="fw-bold">Selesaikan Pembayaran Sebelum</p>
                                         <p className="mb-0">Rabu, 19 Jun 2022 jam 13.00 WIB</p>
                                     </div>
                                     <div className="d-flex align-items-center">

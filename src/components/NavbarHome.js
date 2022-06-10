@@ -86,10 +86,10 @@ export default function NavbarHome(){
                                 </>
                             ) : (
                                 <>
-                                    <Link to={'/login'} className="nav-link text-dark">
+                                    <Link data-testid="signIn" to={'/login'} className="nav-link text-dark">
                                         SignIn
                                     </Link>
-                                    <Link to={'/register'} className="nav-link btn btn-success text-light">
+                                    <Link data-testid="register" to={'/register'} className="nav-link btn btn-success text-light">
                                         Register
                                     </Link>
                                 </>

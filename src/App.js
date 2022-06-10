@@ -12,9 +12,17 @@ import ListCars from './pages/ListCars';
 import Payment from './pages/Payment';
 import BankDetail from './pages/BankDetail';
 import Etiket from './pages/Etiket';
+import { BrowserRouter } from "react-router-dom";
+import { Provider } from 'react-redux';
+import store from "./store"
+import { getCarData } from './actions/carActions';
+
+store.dispatch(getCarData());
 
 function App() {
   return (
+    <Provider store={store}>
+    <BrowserRouter>
    <Routes>
      <Route exact path='/' element={<Home/>} />
      <Route path='/login' element={<Login/>} />
@@ -29,6 +37,8 @@ function App() {
      <Route path='/add' element={<AddCars/>} />
      <Route path='/list' element={<ListCars/>} />
    </Routes>
+   </BrowserRouter>
+    </Provider>
   );
 }
 

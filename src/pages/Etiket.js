@@ -27,16 +27,16 @@ export default function Etiket(){
                     <PaymentNav/>
                 </div>
                 <div className="d-flex flex-column align-items-center py-4 mt-5">
-                    <p className="check text-success"><i class="fa-solid fa-circle-check"></i></p>
-                    <p className="fw-bold">Pembayaran Berhasil!</p>
+                    <p className="check text-success"><i className="fa-solid fa-circle-check"></i></p>
+                    <p data-testid="header" className="fw-bold">Pembayaran Berhasil!</p>
                     <p>Tunjukkan invoice ini ke petugas BCR di titik temu.</p>
                 </div>
                 <div className="d-lg-flex justify-content-center">
                     <div className="invoice ms-md-3 ms-lg-4 mb-4 mb-md-0 mb-lg-0 mx-3 mx-md-3 mx-lg-0 p-4 rounded-3 shadow bg-light">
                         <div className="d-flex justify-content-between">
                             <p className="fw-bold">Invoice</p>
-                            <button onClick={downloadPdf} className="btn btn-outline-primary">
-                                <p className="mb-0"><i class="fa-solid fa-download"></i>Unduh</p>
+                            <button data-testid="unduh" onClick={downloadPdf} className="btn btn-outline-primary">
+                                <p className="mb-0"><i className="fa-solid fa-download"></i>Unduh</p>
                             </button>
                         </div>
                         <p>*no invoice</p>
